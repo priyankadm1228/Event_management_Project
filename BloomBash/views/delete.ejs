@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<br />
+<br />
+<h1>Delete User</h1>
+<form action="/delete-user" method="post">
+  <label for="name">Enter Name to Delete:</label>
+  <input type="text" id="name" name="name" required />
+  <button type="submit">Delete</button>
+</form>
+<%- include('partials/footer') %>

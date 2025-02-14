@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<br />
+<br />
+<h1>Our Users</h1>
+<ul>
+  <% users.forEach(function(user) { %>
+  <li><%= user.name %> - <%= user.gender %></li>
+  <% }); %>
+</ul>
+<form action="/delete" method="get">
+  <button type="submit">Delete User</button>
+</form>
+<%- include('partials/footer') %>

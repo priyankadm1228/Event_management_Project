@@ -1,0 +1,96 @@
+/* Add your CSS styles here */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+main {
+  flex: 1;
+  padding-top: 60px; /* Give enough space to not be overlapped by fixed header */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.container img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+}
+
+.heading h1 {
+  color: rgb(82, 77, 77);
+  position: absolute;
+  top: 5%;
+  left: 19%;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 45px;
+}
+.about p {
+  position: absolute;
+  font-size: 23px;
+  font-family: "Pacifico", "Comic Sans MS", cursive;
+  width: 100%;
+  left: 2%;
+}
+.about {
+  position: absolute;
+  border-bottom: 6px solid grey;
+  border-color: rgb(177, 173, 180);
+  border-width: 10px;
+  border-radius: 15px;
+  height: 120px;
+  width: 1200px;
+  top: 20%;
+  left: 5%;
+}
+
+.press button {
+  background-color: black;
+  border-style: ridge;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+}

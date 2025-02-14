@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>Please fill in the form and click the submit button.</p>
+    <p>We will contact you asap. Thank you!</p>
+
+    <form action="/add-user" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+<%- include('partials/footer') %>
